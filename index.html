@@ -8,6 +8,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!--video -->
+    <video class="video-background" loop muted autoplay>
+        <source src="time.mp4"></source>
+    </video>
+    <div class="video-overlay"></div>
+
+    <!-- container -->
+    <div class="container">
+        <!-- input -->
+        <div class="input-container" id="input-container" >
+            <h1>Create a Custom Countdown</h1>
+            <form action="" class="form" id="coundownForm">
+                <label for="title">Title</label>
+                <input type="text" id="text" placeholder="what are you counting down to?">
+                <label for="date-picker">Select a Date</label>
+                <input type="date" id="date"> 
+                <!-- value of today, min value of today -->
+                <button id="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- countdown -->
+        <div class="countdown" id="countdown" hidden>
+            <h1 id="countdown-title">Countdown title here</h1>
+            <ul>
+                <li><span>3</span>Days</li>
+                <li><span>4</span>Hours</li>
+                <li><span>35</span>Minutes</li>
+                <li><span>9</span>Seconds</li>
+
+            </ul>
+            <button id="countdown-button">Reset</button>
+        </div>
+
+        <!-- complete -->
+        <div class="complete" id="complete" hidden>
+            <h1 class="complete-title">Countdown Complete!</h1>
+            <h1 id="complete-info"></h1>
+            <button id="complete-button">New Countdown</button>
+        </div>
+
+    </div>
+
     <!-- Script -->
     <script src="script.js"></script>
 </body>
